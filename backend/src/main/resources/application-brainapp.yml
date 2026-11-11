@@ -1,0 +1,3 @@
+chatbrain:
+  finance:
+    reference-date: ${CHATBRAIN_REFERENCE_DATE:}

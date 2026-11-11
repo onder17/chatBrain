@@ -1,0 +1,86 @@
+:root {
+  /* Brand Colors */
+  --cb-orange-50: #fff7ed;
+  --cb-orange-100: #ffedd5;
+  --cb-orange-200: #fed7aa;
+  --cb-orange-500: #f97316;
+  --cb-orange-600: #ea580c;
+  --cb-orange-700: #c2410c;
+  --cb-orange-glow: rgba(249, 115, 22, 0.25);
+  --cb-orange-ring: rgba(249, 115, 22, 0.4);
+
+  /* Dark Navy Backgrounds & Surfaces (Matching infoBrain theme) */
+  --cb-bg-base: #0a0e17;
+  --cb-bg-gradient-start: #080c14;
+  --cb-bg-gradient-end: #0f1626;
+  --cb-surface: #111827;
+  --cb-surface-card: #131b2e;
+  --cb-surface-card-hover: #18223a;
+  --cb-surface-card-active: #1c2742;
+  --cb-surface-input: #101626;
+
+  /* User Message Bubble Surface */
+  --cb-user-bubble: #1e293b;
+  --cb-user-bubble-border: #334155;
+
+  /* Assistant Message Bubble Surface */
+  --cb-assistant-bubble: #131b2e;
+  --cb-assistant-bubble-border: #1f2c47;
+
+  /* Borders & Dividers */
+  --cb-border-subtle: rgba(255, 255, 255, 0.08);
+  --cb-border-medium: rgba(255, 255, 255, 0.15);
+  --cb-border-focus: #f97316;
+
+  /* Text & Inks */
+  --cb-text-primary: #f8fafc;
+  --cb-text-secondary: #94a3b8;
+  --cb-text-muted: #64748b;
+  --cb-text-link: #fb923c;
+
+  /* Status Colors */
+  --cb-online-green: #22c55e;
+  --cb-online-glow: rgba(34, 197, 94, 0.4);
+  --cb-danger: #ef4444;
+  --cb-danger-bg: rgba(239, 68, 68, 0.12);
+  --cb-warning: #f59e0b;
+  --cb-warning-bg: rgba(245, 158, 11, 0.12);
+  --cb-success: #10b981;
+  --cb-success-bg: rgba(16, 185, 129, 0.12);
+
+  /* Typography */
+  --cb-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --cb-fs-xs: 12px;
+  --cb-fs-sm: 13px;
+  --cb-fs-base: 15px;
+  --cb-fs-md: 16px;
+  --cb-fs-lg: 18px;
+  --cb-fs-xl: 22px;
+  --cb-fs-2xl: 26px;
+  --cb-lh-base: 1.55;
+
+  /* Radii */
+  --cb-radius-sm: 8px;
+  --cb-radius-md: 12px;
+  --cb-radius-lg: 16px;
+  --cb-radius-xl: 20px;
+  --cb-radius-full: 9999px;
+
+  /* Shadows */
+  --cb-shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  --cb-shadow-glow: 0 0 25px rgba(249, 115, 22, 0.18);
+  --cb-shadow-pop: 0 10px 30px -4px rgba(0, 0, 0, 0.6);
+
+  /* Spacing */
+  --cb-sp-1: 4px;
+  --cb-sp-2: 8px;
+  --cb-sp-3: 12px;
+  --cb-sp-4: 16px;
+  --cb-sp-5: 20px;
+  --cb-sp-6: 24px;
+  --cb-sp-8: 32px;
+
+  /* Transitions */
+  --cb-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cb-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,42 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: chatbrain-backend
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+
+chatbrain:
+  cors:
+    allowed-origins:
+      - "http://localhost:5173"
+      - "http://127.0.0.1:5173"
+  finance:
+    demo-user-id: 1
+    reference-date: ${CHATBRAIN_REFERENCE_DATE:2026-11-15}
+  security:
+    allowed-demo-user-ids: 1,2
+    demo-header-enabled: true
+    chat-requests-per-minute: 30
+  ai:
+    enabled: ${CHATBRAIN_AI_ENABLED:true}
+    ollama-url: ${OLLAMA_BASE_URL:http://127.0.0.1:11434}
+    model: ${OLLAMA_MODEL:qwen3:8b}
+    timeout-ms: ${OLLAMA_TIMEOUT_MS:12000}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+logging:
+  level:
+    com.brainapp.chatbrain: INFO

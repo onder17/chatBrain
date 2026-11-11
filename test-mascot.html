@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { background: #0a0e17; color: white; font-family: sans-serif; padding: 20px; }
+    .box { display: inline-block; margin: 10px; text-align: center; }
+    .circle {
+      border-radius: 50%;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #f97316;
+      box-shadow: 0 0 15px rgba(249, 115, 22, 0.35);
+      background: white;
+    }
+    video {
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Mascot Calibration Test</h2>
+  <div class="box">
+    <h3>Header (38px)</h3>
+    <div class="circle" style="width: 38px; height: 38px;">
+      <video src="/assets/chatbrain-mascot.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; transform: scale(1.15);"></video>
+    </div>
+  </div>
+  <div class="box">
+    <h3>Welcome (80px)</h3>
+    <div class="circle" style="width: 80px; height: 80px;">
+      <video src="/assets/chatbrain-mascot.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; transform: scale(1.15);"></video>
+    </div>
+  </div>
+  <div class="box">
+    <h3>Avatar (32px)</h3>
+    <div class="circle" style="width: 32px; height: 32px;">
+      <video src="/assets/chatbrain-mascot.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; transform: scale(1.15);"></video>
+    </div>
+  </div>
+  <div class="box">
+    <h3>Raw (300px)</h3>
+    <div style="width: 300px; height: 300px; overflow: hidden; border-radius: 50%; border: 3px solid #f97316;">
+      <video id="rawVid" src="/assets/chatbrain-mascot.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;"></video>
+    </div>
+  </div>
+</body>
+</html>
